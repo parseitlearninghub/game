@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QN - Multi Choices</title>
+    <link rel="stylesheet" href="QNCreate.css" />
+    <!--<script type="module" src="index.js"></script>-->
+</head>
+<body>
+    <div id="main_container">
+      
+        <div id="menu_container">
+            <!--<button id="btn_back" onclick="window.location.href='./QNCreate_multichoice.html';">-->
+              <button id="btn_back" onclick="history.back()">
+              <img src="../QuizNotes_Icon/icon-back.png" class="home_icon">
+            </button>
+        </div>
+        
+        <div id="home_container">
+            
+            
+          <div class="main_home_container" style="gap: 35px;">
+            <!--ARI DIRI-->
+            <div class="upload-img-container">
+                <div class="upload-img">
+                    <button onclick="opengallery()">
+                        <img src="../QuizNotes_Icon/icon-img.png" class="img-icon">
+                    </button>
+                    <div>
+                        Add cover image
+                    </div>
+                </div>
+            </div>
+            
+            <div class="title-container">
+              <div style="font-size: 27px;">
+                Title:
+              </div>
+              <div style="width: 97%;">
+                <input type="text" id="title" placeholder="Untitled notes" style="width: 100%; padding: 7px;  border-radius: 7px; outline: none;">
+              </div>
+              <div class="add_question" style="margin-top: 13px; opacity: 100%;">
+                <button id="btn_uploadnotes_add">
+                   <div>
+                     <img src="../QuizNotes_Icon/icon-upload.png" class="add-icon">
+                   </div>
+                </button>
+              </div>
+            </div>
+                <div class="success-container" id="success-container" style="display: none;">
+                  <div style="font-size: 20px;">
+                    Successfully uploaded!
+                  </div>
+                  <button id="btn_uploadnotes_ok"  onclick="window.location.href='../QuizNotes_Homepage/test.html';" class="Successfully-uploaded">
+                    OK
+                  </button>
+                </div>
+                 
+          </div>
+           
+        </div>
+        
+    </div>
+    <script>
+        const btn_uploadnotes_add = document.getElementById("btn_uploadnotes_add");
+        const success_container = document.getElementById("success-container");
+        let test = 0;
+
+        btn_uploadnotes_add.addEventListener("click", () => {
+            success_container.style.display = "flex";
+        });
+
+        function opengallery() {
+            test++;
+            if (test == 1) {
+                btn_uploadnotes_add.style.backgroundColor = "blue";
+            }
+            else if (test == 2) {
+                btn_uploadnotes_add.style.backgroundColor = "green";
+            }else{
+                btn_uploadnotes_add.style.backgroundColor = "transparent";
+                test = 0;
+            }
+            
+        }
+    </script>
+    <!-- <script src="QNCreates.js"></script> -->
+</body>
+
+</html>

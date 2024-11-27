@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QN - Start Display</title>
+    <link rel="stylesheet" href="QNStart.css" />
+    <!--<script type="module" src="index.js"></script>-->
+</head>
+<body>
+    <div id="main_container">
+      
+        <div id="menu_container">
+            <button id="btn_homepage" onclick="history.back()">
+              <img src="../QuizNotes_Icon/icon-back.png" class="home_icon">
+            </button>
+        </div>
+        
+        <div id="home_container">
+            
+            
+          <div class="main_home_container">
+            <!--ARI DIRI-->
+          <div class="container_create">
+            <div class="bg-img">
+              <img src="../QuizNotes_Icon/cover.jpg" class="img-design">
+            </div>
+            <div class="title-details">
+              <div class="title-icon">
+                <img src="../QuizNotes_Icon/icon-multichoice.png" class="img-icon">
+              </div>
+              <div class="title-title">
+                <!--<input type="text" id="question_answer" name="QnA" placeholder="Midterm Coverage Examination">-->
+                <span id="title-text">Midterm Coverage Examination</span>
+                <input id="title-input" type="text" style="display: none;" />
+                  
+                <div id="char-counter" style="display: none;">0/30 characters</div>
+                <button id="edit-button">
+                  <img src="../QuizNotes_Icon/icon-edit2.png" style="width: 15px;">
+                </button>
+                  
+              </div>
+            </div>
+          </div>
+            
+          <div class="start-quiz">
+            <button id="btn_start">
+                <div>
+                  <img src="../QuizNotes_Icon/icon-play.png" style="width: 32px; display: flex; align-items: center">
+                </div>
+                <div style="font-size: 18px;">
+                  Play Quiz
+                </div>
+            </button>
+          </div>
+           
+          <div class="num-question" style="margin-bottom: 5px;">
+            10 question/s
+          </div>
+          
+          <div class="display_container">
+              <!--first question-->
+            <div class="question_container_display">
+                
+              <div class="lower_display">
+                <div>1. [Question]</div>
+                <div>Answer choices</div>
+                <div style="color: red;">[Choices]</div>
+                <div style="color: green;">[Choices]</div>
+                <div style="color: red;">[Choices]</div>
+                <div style="color: red;">[Choices]</div>
+              </div>
+                
+            </div>
+              <!--end first-->
+              <div class="question_container_display">
+                
+              <div class="lower_display">
+                <div>2. [Question]</div>
+                <div>Answer choices</div>
+                <div style="color: red;">[Choices]</div>
+                <div style="color: green;">[Choices]</div>
+                <div style="color: red;">[Choices]</div>
+                <div style="color: red;">[Choices]</div>
+              </div>
+                
+            </div>
+            <div class="question_container_display">
+                
+              <div class="lower_display">
+                <div>3. [Question]</div>
+                <div>Answer choices</div>
+                <div style="color: red;">[Choices]</div>
+                <div style="color: green;">[Choices]</div>
+                <div style="color: red;">[Choices]</div>
+                <div style="color: red;">[Choices]</div>
+              </div>
+                
+            </div>
+            <div class="question_container_display">
+                
+              <div class="lower_display">
+                <div>4. [Question]</div>
+                <div>Answer choices</div>
+                <div style="color: red;">[Choices]</div>
+                <div style="color: green;">[Choices]</div>
+                <div style="color: red;">[Choices]</div>
+                <div style="color: red;">[Choices]</div>
+              </div>
+                
+            </div>
+            <div class="question_container_display">
+                
+              <div class="lower_display">
+                <div>5. [Question]</div>
+                <div>Answer choices</div>
+                <div style="color: red;">[Choices]</div>
+                <div style="color: green;">[Choices]</div>
+                <div style="color: red;">[Choices]</div>
+                <div style="color: red;">[Choices]</div>
+              </div>
+                
+            </div>
+            
+            <!--end-->
+          </div>
+            
+            <div class="edit_btn">
+              <button id="edit_btn">
+                <div>
+                  <img src="../QuizNotes_Icon/icon-edit.png" class="edit_icon">
+                </div>
+                <div style="font-size: 17px; display:flex; justify-content: center; align-items: center;">
+                  Edit
+                </div>
+              </button>
+            </div>
+            
+<!--            <div id="editable-title">-->
+<!--    <span id="title-text">Your Quiz Title</span>-->
+<!--    <input id="title-input" type="text" style="display: none;" />-->
+<!--    <button id="edit-button">Edit Title</button>-->
+<!--</div>-->
+
+            
+          </div>
+           
+        </div>
+        
+    </div>
+    <script src="QNStart.js"></script>
+</body>
+
+</html>
