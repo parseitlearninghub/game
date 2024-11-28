@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale:1.0">
+        <title>2048</title>
+        <link rel="stylesheet" href="2048.css">
+    </head>
+
+    <body>
+        <div id="menu_container">
+            
+            <button id="home_btn">
+                <img src="./img/icon-home.png" class="home_icon">
+            </button>
+            
+        </div>
+
+        <h1 id="title-2048" style="padding-top: 6vh;">2048</h1 >
+        <hr>
+        <h2 style="display: none;" id="display-score">Score: <span id="score">0</span></h2>
+        
+        <button id="start-game-btn">Start Game</button>
+
+        <div id="game-over-popup" style="display: none; z-index: 10;">
+            <h2>Game Over</h2>
+            <p>Your score is <span id="score-gameover">0</span></p>
+            <button id="restart-game-btn">Restart Game</button>
+        </div>
+
+        <div id="board"></div>
+
+        <div style="display: flex; justify-content: center; padding: 30px;">
+        <button id="exit-game-btn" style="display: none;">Exit Game</button>
+        </div>
+        <script src="2048.js"></script>
+    </body>
+</html>
